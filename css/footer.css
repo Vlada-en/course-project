@@ -1,0 +1,18 @@
+.footer {
+
+}
+
+.footer__container {
+	background-color: #424141;
+}
+
+.footer__logo-container {
+	/* position: relative;
+	bottom: 0;
+	right:0; */
+}
+
+.footer__logo {
+width: 262px; 
+height: 86px;
+}
