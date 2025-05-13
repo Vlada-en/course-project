@@ -8,18 +8,9 @@
 }
 
 @font-face {
-	font-family: 'Libertinus Serif Initials';
-	src: url('LibertinusSerifInitials-Regular.woff2') format('woff2'),
-			url('LibertinusSerifInitials-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Libertinus Serif Display';
-	src: url('LibertinusSerifDisplay-Regular.woff2') format('woff2'),
-			url('LibertinusSerifDisplay-Regular.woff') format('woff');
+	font-family: 'Libertinus Serif';
+	src: url('../fonts/LibertinusSerifDisplay-Regular.woff2') format('woff2'),
+			url('../fonts/LibertinusSerifDisplay-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -27,8 +18,8 @@
 
 @font-face {
 	font-family: 'Bellota Text';
-	src: url('BellotaText-Bold.woff2') format('woff2'),
-			url('BellotaText-Bold.woff') format('woff');
+	src: url('../fonts/BellotaText-Bold.woff2') format('woff2'),
+			url('../fonts/BellotaText-Bold.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;

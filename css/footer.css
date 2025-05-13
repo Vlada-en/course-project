@@ -1,18 +1,51 @@
 .footer {
-
+background: url('../img/main-bg.png');
+background-size: cover;
+height: 341px;
+padding: 64px 0 93px 0;
 }
 
 .footer__container {
-	background-color: #424141;
+	background-color: #333232;
+	height: 186px;
+	position: relative;
 }
 
 .footer__logo-container {
-	/* position: relative;
-	bottom: 0;
-	right:0; */
+	position: absolute;
+	right: 0;
+	padding-right: 106px;
+	margin: 54px 0 54px 0;
 }
 
 .footer__logo {
-width: 262px; 
-height: 86px;
+	width: 254px; 
+	height: 77px;
 }
+
+.links-container {
+	position: absolute;
+	max-width: 700px; 
+	margin: 23px 0 24px 0;
+	padding-left: 106px;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: left;
+}
+
+.link-text {
+	color: #656565;
+	font-family: Bellota Text, sans-serif;
+}
+
+.link {
+	font-family: Libertinus Serif;
+}
+
+.link-tgbot {
+	margin-bottom: 27px;
+}
+
+
+
+
