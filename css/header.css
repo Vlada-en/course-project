@@ -1,83 +1,82 @@
-.header {
-	background: url('../img/header-bg.png');
+header {
 	background-size: cover; 
-	padding: 250px 0 335px 0;
 	background-repeat: no-repeat;
+	height: 1000px;
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 1));
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.header__container {
+	position: relative;
+	box-sizing:content-box;
+	height: 430px;
+	margin: 0 5% 334px 5%;
+	padding-top: 300px;
 }
 
 .header__logo {
-	width: 631px;
-	height: 190px;
-	margin-left: 10%;
-	margin-bottom: 60px;
+	position: absolute;
+	width: 600px;
+	height: 160px;
+}
+
+.header__title-container {
+	position: absolute;
+	margin-left: 300px;
+	height: 195px;
+	bottom: 0;
 }
 
 .header__title {
-		font-family: Hello_January, sans-serif;
-	font-size: 170px;
+	line-height: 45px;
+	font-size: 95px;
+	font-family: Hello_January;
 	font-weight: 50;
 	text-align: right;
-	line-height: 85px;
-	margin-right: 10%;
-	padding-left: 10%;
 }
 
-.header__title-text {
-	display: block;
+@media (min-width: 1440px) and (max-width: 2559px) {
+.header {
+		height: 1100px;
 }
 
-@media (min-width: 1240px) {
-	.header__logo {
-		width: 730px;
-		height: 290px;
+	.header__container {
+			height: 470px;
 	}
-	
-	.header__title {
-		font-size: 130px;
-	}
+
+  .header__logo {
+    width: 700px; 
+    height: auto; 
+  }
+
+  .header__title {
+    line-height: 55px; 
+    font-size: 110px; 
+  }
 }
 
-@media (min-width: 1360px) {
-	.header__logo {
-		width: 900px;
-		height: 350px;
-	}
-	
-	.header__title {
-		font-size: 150px;
-	}
+@media (min-width: 2560px) {
+.header {
+		height: 1200px;
 }
 
-@media (min-width: 1440px) {
-	.header__logo {
-		width: 1050px;
-		height: 450px;
+	.header__container {
+			height: 510px;
 	}
-	
-	.header__title {
-		font-size: 170px;
-	}
-}
 
-@media (min-width: 1800px) {
-	.header__logo {
-		width: 1200px;
-		height: 550px;
-	}
-	
-	.header__title {
-		font-size: 190px;
-	}
-}
+  .header__logo {
+    width: 800px; 
+    height: auto; 
+  }
 
-@media (min-width: 2100px) {
-	.header__logo {
-		width: 1400px;
-		height: 700px;
-	}
-	
-	.header__title {
-		font-size: 240px;
-		line-height: 110px;
-	}
+  .header__title {
+    line-height: 65px; 
+    font-size: 130px; 
+  }
 }

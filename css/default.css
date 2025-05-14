@@ -1,6 +1,4 @@
 html {
-	/* --container: 1000px; */
-	/* --padding-container: 170px; */
 	box-sizing: border-box;
 	/* position: relative;
 	overflow-x: hidden; */
@@ -17,6 +15,12 @@ body {
 	color: white;
 	/* position: relative;
 	overflow-x: hidden; */
+}
+
+.bg-img {
+	background: url('../img/header-bg.png');
+	background-size: cover; 
+	background-repeat: no-repeat;
 }
 
 img, svg {
@@ -58,9 +62,3 @@ fieldset {
 	position: fixed;
 	transform: scale(0);
 }
-
-/* .container {
-	max-width: calc(var(--container) + (var(--padding-container) * 2));
-	padding: 0 var(--padding-container);
-	margin: 0 auto;
-} */
