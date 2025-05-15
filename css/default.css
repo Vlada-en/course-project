@@ -9,18 +9,11 @@ html {
 }
 
 body {
-	min-width: 1024px;
 	min-height: 100vh;
 	background-color: black;
 	color: white;
 	/* position: relative;
 	overflow-x: hidden; */
-}
-
-.bg-img {
-	background: url('../img/header-bg.png');
-	background-size: cover; 
-	background-repeat: no-repeat;
 }
 
 img, svg {

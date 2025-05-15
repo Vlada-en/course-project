@@ -1,9 +1,5 @@
 main {
 background: url('../img/main-bg.png');
-	background-image: linear-gradient(
-			to top,
-			rgba(0, 0, 0, 1),
-			rgba(0 ,0 ,0 ,1));
 background-size: cover;
 }
 
@@ -45,4 +41,27 @@ background-size: cover;
   position: absolute;
   top: 1em;
   left: 1.5em;
+}
+
+.pictures__wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 110px; 
+}
+
+.pictures__container {
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+  gap: 20px;
+}
+
+.picture-card {
+  width: 450px; 
+  height: 380px; 
+}
+
+.picture-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
