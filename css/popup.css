@@ -1,0 +1,58 @@
+.popup {
+	position: fixed; 
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(27, 27, 27, 0.5); 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	z-index: 10000; 
+}
+
+.popup.hidden {
+	display: none;
+}
+
+.popup__content {
+	background: #3a3a3aec;
+	padding: 20px;
+	max-width: 80%;
+	max-height: auto;
+	position: relative;
+}
+
+.popup__image-container {
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+
+.popup__image-container img {
+	margin-top: 30px;
+	min-width: 800px;
+	min-height: 550px;
+	max-width: 1000px;
+	max-height: 900px;
+	border: 20px solid rgb(219, 219, 219);
+}
+
+.popup__info {
+	font-family: Libertinus Serif;
+	font-size: 35px;
+	font-weight: 300;
+	color: rgb(0, 0, 0);
+	padding: 20px;
+	margin: 30px 0;
+	background-color: rgb(204, 204, 204);
+	flex-grow:1;
+}
+
+.popup__info h3 {
+	font-size: 40px;
+	text-align: center;
+}
+
+body.popup-open {
+	overflow: hidden; 
+}

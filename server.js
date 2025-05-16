@@ -1,9 +1,10 @@
 const path = require('path');
 const sqlite3 = require('sqlite3').verbose();
 const express = require('express'); 
-
+const cors = require('cors');
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 const dbPath = path.join(__dirname, 'data', 'gallery.db');
@@ -15,10 +16,10 @@ const db = new sqlite3.Database(dbPath, (err) => {
   }
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname)));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.get('/paintings', (req, res) => {
@@ -33,20 +34,9 @@ app.get('/paintings', (req, res) => {
 
     data.paintings = rowsPaintings;
 
-    db.all('SELECT * FROM paintingcolors', [], (errColors, rowsColors) => {
-      if (errColors) {
-        console.error('Ошибка при запросе к таблице paintingcolors:', errColors.message);
-        res.status(500).send('Ошибка при получении данных');
-        return;
-      }
-
-      data.colors = rowsColors;
-
-      res.json(data);
+    res.json(data);
     });
-  });
 });
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

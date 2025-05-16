@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Eternal Canvas</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="preload" href="fonts/BellotaText-Bold.woff2" as="font" crossorigin>
+	<link rel="preload" href="fonts/Hello_January_script-Script.woff2" as="font" crossorigin>
+	<link rel="preload" href="fonts/LibertinusSerifDisplay-Regular.woff2" as="font" crossorigin>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<header>
+		<div class="header__container">
+			<svg class="header__logo" viewBox="0 0 632 191">
+				<use href="img/sprite.svg#logo"/>
+			</svg>
+			<div class="header__title-container">
+				<h1 class="header__title">Искусство — выражение самых
+					<span>глубоких мыслей самым простым способом.</span>
+				</h1>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+	<div class="popup hidden">
+		<div class="popup__content">
+			<div class="popup__image-container"></div>
+			<div class="popup__info"></div>
+		</div>
+	</div>
+
+		<div class="line"></div>
+		<div class="main__title-container">
+				<h2 class="main__title-text">Каталог</h2>
+		</div>
+		<div class="picture__filter-container">
+			<ul>
+				<li >
+					<div class="picture__color-element reset-color" data-color-id="0" style="background-color: #E9EAEE;">
+						<svg class="reset-color-svg">
+							<use href="img/sprite.svg#reset"/>
+						</svg>
+					</div>
+				</li>
+				<li >
+					<div class="picture__color-element" data-color-id="1" style="background-color: #F48FB1;"></div>
+				</li>
+				<li >
+					<div class="picture__color-element" data-color-id="7" style="background-color: #E7BAA3;"></div>
+				</li>
+				<li >
+					<div class="picture__color-element" data-color-id="2" style="background-color: #2879FE;"></div>
+				</li>
+				<li >
+					<div class="picture__color-element" data-color-id="3" style="background-color: #0D8F4F;"></div>
+				</li>
+				<li >
+					<div class="picture__color-element" data-color-id="4" style="background-color: #FDD734;"></div>
+				</li>
+				<li >
+					<div class="picture__color-element" data-color-id="6" style="background-color: #D50100;"></div>
+				</li>
+				<li >
+					<div class="picture__color-element" data-color-id="5" style="background-color: #795547;"></div>
+				</li>
+				<li >
+					<div class="picture__color-element" data-color-id="8" style="background-color: #36474F;"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="pictures__wrapper">
+			<div class="pictures__container">
+				<!-- сюда загружаются картины с сервера -->
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="line"></div>
+		<div class="footer__container">
+			<div class="footer__logo-container">
+				<svg class="footer__logo" viewBox="0 0 262 86">
+					<use href="img/sprite.svg#footer-logo"/>
+				</svg>
+			</div>
+			<div class="links-container">
+				<ul>
+					<li class="link-tgbot">
+					<p class="link-text">
+						Тг-бот: 
+					</p>
+					<a class="link" href="https://t.me/EternaCan_bot">
+						https://t.me/EternaCan_bot
+					</a>
+				</li>
+				<li>
+						<p class="link-text">
+						Тех.поддержка:
+					</p>
+					<p class="link">
+						EternalcanvasService@gmail.com
+					</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="js/main.js" type="module"></script>
+</body>
+</html>

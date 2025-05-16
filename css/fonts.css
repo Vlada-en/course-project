@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Hello_January';
+	src: url('../fonts/Hello_January_script-Script.woff2') format('woff2'),
+			url('../fonts/Hello_January_script-Script.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Libertinus Serif';
+	src: url('../fonts/LibertinusSerifDisplay-Regular.woff2') format('woff2'),
+			url('../fonts/LibertinusSerifDisplay-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Bellota Text';
+	src: url('../fonts/BellotaText-Bold.woff2') format('woff2'),
+			url('../fonts/BellotaText-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
