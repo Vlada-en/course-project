@@ -55,8 +55,17 @@ background-size: cover;
   gap: 20px;
 }
 
+.pictures__container div{
+  transition: transform .2s ease-in-out;
+}
+
+.pictures__container div:hover {
+  transform: scale(1.1); 
+}
+
  .picture {
   width: 450px; 
   height: 380px; 
 	object-fit: cover;
 }
+

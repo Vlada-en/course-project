@@ -1,7 +1,5 @@
 html {
 	box-sizing: border-box;
-	/* position: relative;
-	overflow-x: hidden; */
 }
 
 *, *::before, *:after {
@@ -12,8 +10,6 @@ body {
 	min-height: 100vh;
 	background-color: black;
 	color: white;
-	/* position: relative;
-	overflow-x: hidden; */
 }
 
 img, svg {

@@ -1,20 +1,28 @@
+import { openPopup } from '/js/popup-picture.js';
+
 const renderPaintings = (paintings) => {
-		const container = document.querySelector('.pictures__container');
-		container.innerHTML = ''; 
+  const container = document.querySelector('.pictures__container');
 
-		paintings.forEach(painting => {
-			const imgWrapper = document.createElement('div');
-			imgWrapper.className = 'picture-element';
+  container.innerHTML = ''; 
 
-			const img = document.createElement('img');
-			img.className = 'picture';
-			img.src = painting.image_path;
+  paintings.forEach(painting => {
 
-			imgWrapper.appendChild(img);
+    const imgWrapper = document.createElement('div');
+    imgWrapper.className = 'picture-element';
 
-			container.appendChild(imgWrapper);
-		});
-	};
+    const img = document.createElement('img');
+    img.setAttribute('data-id', painting.id);
+    img.className = 'picture';
+    img.src = painting.image_path;
+			
 
-	export { renderPaintings };
+    imgWrapper.appendChild(img);
+
+    container.appendChild(imgWrapper);
+  });
+
+  openPopup(paintings);
+};
+
+export { renderPaintings };
 	
