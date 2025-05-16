@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/data', (req, res) => {
+app.get('/paintings', (req, res) => {
   let data = {};
 
   db.all('SELECT * FROM paintings', [], (errPaintings, rowsPaintings) => {
@@ -34,18 +34,8 @@ app.get('/data', (req, res) => {
 
     data.paintings = rowsPaintings;
 
-    db.all('SELECT * FROM paintingcolors', [], (errColors, rowsColors) => {
-      if (errColors) {
-        console.error('Ошибка при запросе к таблице paintingcolors:', errColors.message);
-        res.status(500).send('Ошибка при получении данных');
-        return;
-      }
-
-      data.colors = rowsColors;
-
-      res.json(data);
+    res.json(data);
     });
-  });
 });
 
 const PORT = process.env.PORT || 3000;
