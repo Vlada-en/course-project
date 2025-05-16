@@ -1,11 +1,11 @@
 main {
-background: url('../img/main-bg.png');
-background-size: cover;
+	background: url('../img/main-bg.png');
+	background-size: cover;
 }
 
 .main__title-container {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 	justify-content: center;
 }
 
@@ -24,11 +24,11 @@ background-size: cover;
 
 .picture__filter-container li {
 	border: 3px solid #ECECEC;
-  transition: transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
 }
 
 .picture__filter-container li:hover {
-  transform: scale(1.1); 
+	transform: scale(1.1); 
 }
 
 .picture__color-element {
@@ -38,34 +38,34 @@ background-size: cover;
 }
 
 .reset-color-svg {
-  position: absolute;
-  top: 1em;
-  left: 1.5em;
+	position: absolute;
+	top: 1em;
+	left: 1.5em;
 }
 
 .pictures__wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 110px; 
+	display: flex;
+	justify-content: center;
+	padding: 110px; 
 }
 
 .pictures__container {
-  display: grid;
-  grid-template-columns: repeat(3, 450px);
-  gap: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 450px);
+	gap: 20px;
 }
 
 .pictures__container div{
-  transition: transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
 }
 
 .pictures__container div:hover {
-  transform: scale(1.1); 
+	transform: scale(1.1); 
 }
 
- .picture {
-  width: 450px; 
-  height: 380px; 
+.picture {
+	width: 450px; 
+	height: 380px; 
 	object-fit: cover;
 }
 

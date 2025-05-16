@@ -1,31 +1,31 @@
 .popup {
-  position: fixed; 
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(27, 27, 27, 0.5); 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  z-index: 10000; 
+	position: fixed; 
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(27, 27, 27, 0.5); 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	z-index: 10000; 
 }
 
 .popup.hidden {
-  display: none;
+	display: none;
 }
 
 .popup__content {
 	background: #3a3a3aec;
-  padding: 20px;
-  max-width: 80%;
-  max-height: auto;
-  position: relative;
+	padding: 20px;
+	max-width: 80%;
+	max-height: auto;
+	position: relative;
 }
 
 .popup__image-container {
 	display: flex; 
-  justify-content: center; 
-  align-items: center; 
+	justify-content: center; 
+	align-items: center; 
 }
 
 .popup__image-container img {
@@ -54,5 +54,5 @@
 }
 
 body.popup-open {
-    overflow: hidden; 
+	overflow: hidden; 
 }
