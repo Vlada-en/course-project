@@ -55,13 +55,8 @@ background-size: cover;
   gap: 20px;
 }
 
-.picture-card {
+ .picture {
   width: 450px; 
   height: 380px; 
-}
-
-.picture-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	object-fit: cover;
 }
